@@ -13,7 +13,8 @@ function Editor() {
   return (
     <div className='bg-black'>
       <div className='flex items-center justify-center'><Header /></div>
-      <div className='p-32 md:px-24 lg:px-32 text-gray-100'>
+      <div className='md:hidden flex items-center justify-center min-h-screen text-gray-400'><p>You can only edit in desktop.</p></div>
+      <div className='hidden md:flex flex-col p-32 md:px-24 lg:px-32 text-gray-100'>
         <div className='flex justify-between items-center'>
           <h2 className='font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-gray-500'>Edit Video</h2>
           <div className='flex gap-5'>
