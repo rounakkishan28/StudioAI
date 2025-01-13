@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const frontend_url = process.env.FRONTEND_URL;
+const frontend_url = "https://studio-ai-five.vercel.app";
 
 export async function PUT(req) {
 
