@@ -20,7 +20,7 @@ function Dashboard() {
   }
 
   return (
-    <div className='pb-10 mt-10 mx-32'>
+    <div className='pb-10 mt-10 sm:mx-32'>
       <h2 className='text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-gray-500'>Dashboard</h2>
       {videoList.length==0? <div className='flex flex-col items-center justify-center mt-10'><span className='font-bold text-2xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-gray-500'>Let's create your first video</span><VideoCreateOption /></div>:<UserVideoList videoList={videoList} setVideoList={setVideoList} />}
     </div>
