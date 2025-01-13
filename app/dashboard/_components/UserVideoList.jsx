@@ -20,7 +20,7 @@ function UserVideoList({ videoList, setVideoList }) {
 
     return (
         <div className='mt-5'>
-            <div className='grid grid-cols-2 lg:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {videoList.map((video, index) => (
                     <div key={index} className='shadow-2xl rounded-xl p-2'>
                         <Link href={'/editor/' + video?.videoId}>
